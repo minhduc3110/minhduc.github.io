@@ -7,29 +7,7 @@
 </head>
 <body>
     <?php
-    function startsWith($string, $substring) {
-        // Lấy độ dài chuỗi con
-        $length = strlen($substring);
-        // So sánh phần đầu chuỗi với chuỗi con
-        return strncmp($string, $substring, $length) === 0;
-    }
-
-    // Ví dụ sử dụng
-    $str = "Minh Duc";
-    $sub1 = "Minh";
-    $sub2 = "Duc";
-
-    if (startsWith($str, $sub1)) {
-        echo "'$str' bắt đầu bằng '$sub1'<br>";
-    } else {
-        echo "'$str' KHÔNG bắt đầu bằng '$sub1'<br>";
-    }
-
-    if (startsWith($str, $sub2)) {
-        echo "'$str' bắt đầu bằng '$sub2'<br>";
-    } else {
-        echo "'$str' KHÔNG bắt đầu bằng '$sub2'<br>";
-    }
+        $str = "15";
+        echo "chuỗi sau khi thêm: " . str_pad($str, 5, "0", STR_PAD_LEFT);
     ?>
 </body>
-</html>
